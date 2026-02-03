@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MartaDonnald</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image: url('https://i.postimg.cc/ht0ZxP9m/4.jpg'); 
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.45); 
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 4.8rem;
+      font-weight: 900;
+      margin-bottom: 1.2rem;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+      letter-spacing: -1px;
+    }
+
+    p.subtitle {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff3366, #ff6b6b);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 18px 60px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(255, 51, 102, 0.4);
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 40px rgba(255, 51, 102, 0.55);
+      background: linear-gradient(135deg, #ff4d4d, #ff8080);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 3.5rem; }
+      p.subtitle { font-size: 1.4rem; }
+      .btn { padding: 14px 40px; font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="content">
+      <h1>MartaDonnald</h1>
+      <p class="subtitle">Најубавите моменти... само за тебе. Приклучи се веднаш и откриј.</p>
+      
+      <a href="https://www.youtube.com/watch?v=VGdBkcxYMfk" class="btn">Join Now</a>
+      <!-- https://www.youtube.com/watch?v=VGdBkcxYMfk -->
+    </div>
+  </div>
+
+</body>
+</html>
